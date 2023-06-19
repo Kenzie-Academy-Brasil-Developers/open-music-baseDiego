@@ -1,1 +1,176 @@
 /* Desenvolva sua estilização aqui ... */
+.container{
+    width: 740px;
+}
+
+.filteringButtons{
+    width: 100%;
+    
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.buttonsGenre{
+   
+    width: 58px;
+    height: 32px;
+    
+
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    border-style: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonsGenre:hover{
+    background-color: var(--color-grey-1);
+    color:var(--color-grey-8)
+}
+
+.container--textAndImputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    width: 95%;
+}
+
+.priceTitle{
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+}
+
+.inputRange{
+    margin-bottom: 68px;
+    appearance: none;
+    background-color:var(--color-brand-1);
+    width: 100%;
+    height: 10px;
+    border-radius: 9px;
+}
+
+.inputRange::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid rgb(102, 2, 173);
+    background-color: white;
+    cursor: pointer;
+}
+
+.titleAlbuns{
+    font-weight: 600px;
+    font-size:var(--font-2);
+    color: var(--color-grey-1);
+    margin-bottom: 24px;
+}
+
+.renderCards{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 45px;
+    width: 100%;
+}
+
+.bannerImg{
+    width: 308px;
+    height: 113px;
+    border-radius: 4px;
+    margin-bottom: 20px;   
+}
+
+.bandInfo{
+    display: flex;
+    padding-left: 16px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.infos{
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-2);
+}
+
+.albumName{
+    color: var(--color-grey-1);
+    font-weight: 600;
+    font-size: var(--font-2);
+    margin-bottom: 27px;
+    padding-left: 16px;
+}
+
+.noValue{
+    color: var(--color-grey-2);
+    animation: fade-in 0.5s ease-in-out 1;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.style{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.price{
+    color: var(--color-grey-2);
+    font-size: var(--font-3);
+    font-weight: 600;
+}
+
+.priceControl{
+    color: var(--color-grey-2);
+    font-size: var(--font-3);
+    font-weight: 600;
+}
+
+.buyButton{
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+    border-style: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: var(--font-3);
+    width: 75px;
+    height: 32px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buyButton:hover{
+    background-color: var(--color-grey-1);
+    color:var(--color-grey-8)
+}
+
+.containe--card{
+    background-color: var(--color-grey-8);
+    border-radius: 8px;
+    height: 270px;
+    width: 308px;
+}
+
+.dark--mode{
+    cursor: pointer;
+}

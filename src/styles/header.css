@@ -1,0 +1,21 @@
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin: 87px 0px 65px 420px;
+    
+}
+
+.pageTitle{
+    color: var(--color-grey-1);
+    font-size:var(--font-1) ;
+    font-weight: 600;
+}
+
+.filterTile{
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+    margin-bottom: 24px;
+}
+

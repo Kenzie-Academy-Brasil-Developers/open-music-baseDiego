@@ -7,12 +7,37 @@
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
+    <script type="module" src="./src/scripts/theme.js" defer></script>
+    <script type="module" src="./src/scripts/productsData.js" defer></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8764e3d47e.js" crossorigin="anonymous" defer></script>
   </head>
+  
   <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <header class="headerContainer">
+      <h1 class="pageTitle">open music</h1>
+      <i class="dark--mode ligth--mode"></i>
+    </header>
+    
+    <main>
+      <div class="container">
+      <section class="filterManager">
+        <div class="subtitleStyle">
+          <h2 class="filterTile">Gênero Musical</h2>
+        </div>
+        <ul class="filteringButtons"></ul>
+        <div class="container--textAndImputs">
+          <h2 class="priceTitle">Definir Preço</h2>
+          <p class="priceControl">Até R$ ...</p>
+        </div>
+        <input type="range" class="inputRange" min="0" max="100" step="1" value="0">
+      </section>
+
+      <section class="container--renderCard">
+        <h2 class="titleAlbuns">Álbuns Encontrados</h2>
+        <ul class="renderCards"></ul>
+      </section>
+      </div>
+    </main>
   </body>
 </html>

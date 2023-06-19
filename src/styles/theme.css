@@ -1,0 +1,26 @@
+.dark--mode{
+    transition: 0.3s; 
+}
+
+.dark--mode:hover{
+    color: rgb(66, 77, 232);
+    cursor: pointer;
+    animation: abc 3s ease-in-out 5;
+}
+
+.ligth--mode{
+    transition: 0.3s;
+    color: #25467c;
+}
+
+.ligth--mode:hover{
+    color: yellow;
+    cursor: pointer;
+    animation: abc 3s ease-in-out 5;
+}
+
+@keyframes abc{
+    0%{
+        transform: rotateY(160deg);
+    }
+}
