@@ -86,7 +86,6 @@ function filter (products, categories){
     let filteredArray = products;
     let categoryIndex = 0;
     let inputValue = input.value;
-    
 
     buttonFilters.forEach(button => {
         button.addEventListener('click', () => {
@@ -97,23 +96,22 @@ function filter (products, categories){
                     return filter.category === categoryIndex
                 })
                 
-                if(categoryIndex  <= 0 ){
-                    renderCards(products)
-
-                }else{(categoryIndex === categoryIndex && products.price <= inputValue)
+                if(categoryIndex === 0){
+                    filteredArray = products
+                }
+                else{(categoryIndex === categoryIndex && products.price <= inputValue)
                     renderCards(filteredArray)   
                 }
-            })
-        });
+        })
+    });
         input.addEventListener('input', () =>{
             filteredPrice.innerText = `Até R$ ${input.value}`
-            let array = []
-            
-            array = filteredArray.filter((album) => {
+           
+           const array = filteredArray.filter((album) => {
                 return album.price <= input.value
             })
             renderCards(array)
-    }   )
+        })
 }
     
 renderButton(categories)
